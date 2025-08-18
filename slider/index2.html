@@ -49,17 +49,42 @@ body {
 }
 
 .slide:nth-child(2) {
-  background: url("2.png") no-repeat
+  background: url("1.jpeg") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url("3.png") no-repeat
+  background: url("2.png") no-repeat
     center top/cover;
 }
 
 
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+}
 
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.buttons button {
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  padding: 0px 0px;
+  border-radius: 0%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #e5ebf3;
+  color: #362a2b;
+}
 
 @media (min-width: 640px) and (min-height: 640px) {
   .slide .content {
